@@ -50,6 +50,88 @@
             </li>
           </ul>
         </address>
+
+        <button type="button" class="burger-btn" data-menu-open>
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="mobile-menu is-open" data-menu>
+        <div class="container mobile-menu-container">
+          <button type="button" class="mobile-menu-close" data-menu-close>
+            <svg class="mobile-menu-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+
+          <nav class="mobile-menu-nav">
+            <ul class="mobile-menu-list">
+              <li class="mobile-menu-title">
+                <a class="mobile-menu-link" href="./index.html"
+                  ><span class="mobile-menu-studio">Studio</span></a
+                >
+              </li>
+              <li class="mobile-menu-title">
+                <a class="mobile-menu-link" href="">Portfolio</a>
+              </li>
+              <li class="mobile-menu-title">
+                <a class="mobile-menu-link" href="">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+
+          <address class="mobile-menu-address">
+            <ul class="contacts-menu-list">
+              <li class="contacts-menu-item">
+                <a class="contacts-menu-link" href="tel:+110001111111"
+                  ><span class="contacts-menu-tel">+11 (000) 111-11-11</span></a
+                >
+              </li>
+
+              <li class="contacts-menu-item">
+                <a class="contacts-menu-link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+
+          <ul class="menu-soc-list">
+            <li class="menu-soc-item">
+              <a href="" class="menu-soc-link">
+                <svg class="menu-soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="menu-soc-item">
+              <a href="" class="menu-soc-link">
+                <svg class="menu-soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="menu-soc-item">
+              <a href="" class="menu-soc-link">
+                <svg class="menu-soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="menu-soc-item">
+              <a href="" class="menu-soc-link">
+                <svg class="menu-soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-in"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -125,8 +207,9 @@
           <ul class="team-list">
             <li class="team-list-img">
               <img
+                srcset="./images/mark.jpg 1x, ./images/mark2x.jpg 2x"
                 class="team-img"
-                src="./images/mark.jpg"
+                src="./images/mark.jpg,"
                 width="264"
                 height="260"
                 alt="Mark"
@@ -172,6 +255,7 @@
             <li class="team-list-img">
               <img
                 class="team-img"
+                srcset="./images/tom.jpg 1x, ./images/tom2x.jpg 2x"
                 src="./images/tom.jpg"
                 width="264"
                 height="260"
@@ -219,6 +303,7 @@
             <li class="team-list-img">
               <img
                 class="team-img"
+                srcset="./images/camila.jpg 1x, ./images/camila2x.jpg 2x"
                 src="./images/camila.jpg"
                 width="264"
                 height="260"
@@ -266,6 +351,7 @@
             <li class="team-list-img">
               <img
                 class="team-img"
+                srcset="./images/daniel.jpg 1x, ./images/daniel2x.jpg 2x"
                 src="./images/daniel.jpg"
                 width="264"
                 height="260"
@@ -322,6 +408,7 @@
               <div class="thumb">
                 <img
                   class="porfolio-image"
+                  srcset="./images/bankapp.jpg 1x, ./images/bankapp2x.jpg 2x"
                   src="./images/bankapp.jpg"
                   alt="Bankapp"
                   width="360"
@@ -344,6 +431,7 @@
               <div class="thumb">
                 <img
                   class="porfolio-image"
+                  srcset="./images/cashless.jpg 1x, ./images/cashless2x.jpg 2x"
                   src="./images/cashless.jpg"
                   alt="Cashless"
                   width="360"
@@ -366,6 +454,10 @@
               <div class="thumb">
                 <img
                   class="porfolio-image"
+                  srcset="
+                    ./images/Meditation.jpg   1x,
+                    ./images/meditation2x.jpg 2x
+                  "
                   src="./images/Meditation.jpg"
                   alt="Meditation"
                   width="360"
@@ -388,6 +480,7 @@
               <div class="thumb">
                 <img
                   class="porfolio-image"
+                  srcset="./images/taxi.jpg 1x, ./images/taxi2x.jpg 2x"
                   src="./images/taxi.jpg"
                   alt="Taxi"
                   width="360"
@@ -409,6 +502,7 @@
               <div class="thumb">
                 <img
                   class="porfolio-image"
+                  srcset="./images/screen.jpg 1x, ./images/screen2x.jpg 2x"
                   src="./images/screen.jpg"
                   alt="Screen"
                   width="360"
@@ -431,6 +525,7 @@
               <div class="thumb">
                 <img
                   class="porfolio-image"
+                  srcset="./images/online.jpg 1x, ./images/online2x.jpg 2x"
                   src="./images/online.jpg"
                   alt="Online"
                   width="360"
@@ -465,7 +560,7 @@
           </p>
         </div>
 
-        <div class="footer-soc-media">
+        <div class="footer-social">
           <p class="footer-text-icon">Social media</p>
           <ul class="footer-list">
             <li class="footer-item">
@@ -598,8 +693,10 @@
                   <use href="./images/icons.svg#icon-check"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the
-              <a href="" class="link-check">Privacy Policy</a>
+              <span>
+                I accept the terms and conditions of the
+                <a href="" class="link-check">Privacy Policy</a>
+              </span>
             </label>
           </div>
           <button type="submit" class="check-btn">Send</button>
@@ -608,5 +705,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
